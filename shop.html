@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Parapharmacie Kalyhealth</title>
+  <meta name="description" content="Shop parapharmacy, cosmetics, health, orthopedic equipment, mobility aids, and baby care at Kalyhealth, Tiznit. Open 24/7.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="navbar-logo" href="index.html">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          <span class="logo-title">Kalyhealth</span>
+          <span class="logo-sub">24/7 Pharmacy & Orthopedic</span>
+        </div>
+      </a>
+      <div class="nav-open-badge">
+        <span class="nav-open-dot"></span>
+        <span>Open 24/7</span>
+      </div>
+      <nav class="nav-actions">
+        <button class="nav-menu-toggle" id="navToggle" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 16C5.44772 16 5 16.4477 5 17C5 17.5523 5.44772 18 6 18C6.55228 18 7 17.5523 7 17C7 16.4477 6.55228 16 6 16Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 16C14.4477 16 14 16.4477 14 17C14 17.5523 14.4477 18 15 18C15.5523 18 16 17.5523 16 17C16 16.4477 15.5523 16 15 16Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2.5 4H4.16667L5.83333 12.5H15.8333L17.5 6.66667H5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="shop.html">Shop</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="page-header-inner">
+        <span class="section-kicker">Shop</span>
+        <h1 class="page-title">Shop All Products</h1>
+        <p class="page-subtitle">Browse our selection of parapharmacy, cosmetics, health & wellness, orthopedic equipment, mobility aids, and baby & family care.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 18px;">
+      <div class="container filters-bar animate-fade-in-up">
+        <div class="filter-row" id="categoryFilters">
+          <button class="filter-chip active" data-category="all">All</button>
+          <button class="filter-chip" data-category="Skincare & Cosmetics">Skincare & Cosmetics</button>
+          <button class="filter-chip" data-category="Health & Wellness">Health & Wellness</button>
+          <button class="filter-chip" data-category="Orthopedic Equipment">Orthopedic Equipment</button>
+          <button class="filter-chip" data-category="Mobility Aids">Mobility Aids</button>
+          <button class="filter-chip" data-category="Baby & Family Care">Baby & Family Care</button>
+        </div>
+        <div class="search-sort">
+          <input type="search" class="search-input" id="searchInput" placeholder="Search products by name...">
+          <select class="sort-select" id="sortSelect">
+            <option value="default">Sort: Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 18px;">
+      <div class="container products-grid animate-stagger" id="shopProducts"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="navbar-logo" style="color: #fff;">
+          <div class="logo-mark"></div>
+          <div class="logo-text">
+            <span class="logo-title">Kalyhealth</span>
+            <span class="logo-sub" style="color: rgba(248,250,252,0.72);">24/7 Pharmacy & Orthopedic Specialist</span>
+          </div>
+        </div>
+        <p class="footer-text">Trusted 24/7 parapharmacy in Tiznit, Morocco. General parapharmacy, cosmetics, and orthopedic equipment with fair prices and excellent service.</p>
+        <p class="footer-text">N°765 Av. Abdellatif Sabihi, Tiznit 85000, Morocco</p>
+        <p class="footer-text">Open 24 hours</p>
+        <p class="footer-text">WhatsApp: 06 65 98 90 87</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a class="footer-link" href="index.html">Home</a>
+        <a class="footer-link" href="about.html">About</a>
+        <a class="footer-link" href="shop.html">Shop</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Categories</h4>
+        <a class="footer-link" href="shop.html#skincare">Skincare & Cosmetics</a>
+        <a class="footer-link" href="shop.html#health">Health & Wellness</a>
+        <a class="footer-link" href="shop.html#ortho">Orthopedic Equipment</a>
+        <a class="footer-link" href="shop.html#mobility">Mobility Aids</a>
+        <a class="footer-link" href="shop.html#baby">Baby & Family Care</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Parapharmacie Kalyhealth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-panel" id="cartPanel">
+      <div class="cart-header">
+        <h3 class="cart-title">Your Cart</h3>
+        <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="cartTotal">0 DH</span>
+        </div>
+        <button class="btn btn-whatsapp tap-scale" id="orderWhatsApp">Order via WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
